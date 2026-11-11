@@ -34,7 +34,7 @@
 
 ## 工作原理
 
-插件通过官方的 `@deepseek-ai/dsh-mcp-client` 添加一个 MCP 服务器：`npx -y -p @meiti/healer@0.2.0 healer-mcp`，与 Healer 的 Claude Code 插件使用的是同一个无依赖服务器。详见 `cordis.patch.yml`。
+插件通过官方的 `@deepseek-ai/dsh-mcp-client` 添加一个 MCP 服务器：`npx -y -p @meiti/healer@0.2.1 healer-mcp`，与 Healer 的 Claude Code 插件使用的是同一个无依赖服务器。详见 `cordis.patch.yml`。
 
 ## 它会运行、发送和保存什么
 
