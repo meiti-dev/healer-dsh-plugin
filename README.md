@@ -31,10 +31,12 @@ Ask the agent: "Send this project to Healer, wait for the result and show me the
 | `mcp__healer__healer_revisar` | Sends the project and returns a job id |
 | `mcp__healer__healer_resultado` | Checks the job; when it finishes, returns the summary and the diff |
 | `mcp__healer__healer_aplicar` | Writes the changes, only if each file is still the same as when it was sent |
+| `mcp__healer__healer_revisar_pantalla` | Starts the app in Healer's sandbox and checks what each page shows (loaded or not, failed requests, visual issues, YES / NO / CANNOT PROVE per expectation). Repairs nothing and uses no AI |
+| `mcp__healer__healer_informar_decision` | Tells Healer whether you applied, partly applied or rejected the changes, so it learns from it |
 
 ## How it works
 
-The plugin adds one MCP server through the official `@deepseek-ai/dsh-mcp-client`: `npx -y -p @meiti/healer@0.2.1 healer-mcp`, the same dependency-free server used by the Healer plugin for Claude Code. See `cordis.patch.yml`.
+The plugin adds one MCP server through the official `@deepseek-ai/dsh-mcp-client`: `npx -y -p @meiti/healer@0.2.4 healer-mcp`, the same dependency-free server used by the Healer plugin for Claude Code. See `cordis.patch.yml`.
 
 ## What it runs, sends and stores
 

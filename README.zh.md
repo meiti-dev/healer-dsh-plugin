@@ -31,10 +31,12 @@
 | `mcp__healer__healer_revisar` | 发送项目，返回任务 id |
 | `mcp__healer__healer_resultado` | 查询任务；完成后返回摘要和 diff |
 | `mcp__healer__healer_aplicar` | 写入修改，前提是每个文件仍与发送时完全一致 |
+| `mcp__healer__healer_revisar_pantalla` | 在 Healer 的沙箱中启动应用，检查每个页面显示的内容（是否加载、失败的请求、视觉问题，每个预期给出 YES / NO / CANNOT PROVE）。不做修复，不使用 AI |
+| `mcp__healer__healer_informar_decision` | 告诉 Healer 你是否应用、部分应用或拒绝了修改，供其学习 |
 
 ## 工作原理
 
-插件通过官方的 `@deepseek-ai/dsh-mcp-client` 添加一个 MCP 服务器：`npx -y -p @meiti/healer@0.2.1 healer-mcp`，与 Healer 的 Claude Code 插件使用的是同一个无依赖服务器。详见 `cordis.patch.yml`。
+插件通过官方的 `@deepseek-ai/dsh-mcp-client` 添加一个 MCP 服务器：`npx -y -p @meiti/healer@0.2.4 healer-mcp`，与 Healer 的 Claude Code 插件使用的是同一个无依赖服务器。详见 `cordis.patch.yml`。
 
 ## 它会运行、发送和保存什么
 
