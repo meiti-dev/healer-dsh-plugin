@@ -36,7 +36,7 @@ Ask the agent: "Send this project to Healer, wait for the result and show me the
 
 ## How it works
 
-The plugin adds one MCP server through the official `@deepseek-ai/dsh-mcp-client`: `npx -y -p @meiti/healer@0.4.0 healer-mcp`, the same dependency-free server used by the Healer plugin for Claude Code. See `cordis.patch.yml`.
+The plugin adds one MCP server through the official `@deepseek-ai/dsh-mcp-client`: `npx -y -p @meiti/healer@0.5.0 healer-mcp`, the same dependency-free server used by the Healer plugin for Claude Code. See `cordis.patch.yml`.
 
 ## What it runs, sends and stores
 
